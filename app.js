@@ -1,28 +1,10 @@
-import Lenis from '@studio-freight/lenis'
 // Initialize Lenis
-// const lenis = new Lenis()
+const lenis = new Lenis();
 
-// lenis.on('scroll', (e) => {
-//   console.log(e)
-// })
+// Use requestAnimationFrame to continuously update the scroll
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
 
-// function raf(time) {
-//   lenis.raf(time)
-//   requestAnimationFrame(raf)
-// }
-
-// requestAnimationFrame(raf)
-
-const lenis = new Lenis()
-
-lenis.on('scroll', (e) => {
-  console.log(e)
-})
-
-lenis.on('scroll', ScrollTrigger.update)
-
-gsap.ticker.add((time)=>{
-  lenis.raf(time * 1000)
-})
-
-gsap.ticker.lagSmoothing(3)
+requestAnimationFrame(raf);
