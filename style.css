@@ -7,11 +7,11 @@
 html, body {
   height: 100%;
   width: 100%;
-  font-size: clamp(10px, 2.5vh, 18px);
+  font-size: clamp(12px, 2.5vw, 18px);
 }
 
 body {
-  background-color: rgb(31, 31, 31);
+  background-color: black;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
@@ -23,89 +23,302 @@ main {
   display: flex;
   flex-direction: column;
   gap: 0rem;
+  background-color: rgb(10, 10, 10);
 }
-main section {
+main #sec1 {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  padding: 0.5rem;
+  gap: 1rem;
+  padding: 1.2rem;
 }
-main section #top {
+main #sec1 #top {
   width: 100%;
 }
-main section #top img {
+main #sec1 #top img {
   width: 100%;
   border-radius: 12px;
 }
-main section #bottom {
+main #sec1 #bottom {
   width: 100%;
-  background-color: rgb(38, 38, 38);
+  background-color: rgb(30, 30, 30);
   border-radius: 15px;
-  padding: 1.8rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 3.5rem;
+  gap: 4.8rem;
 }
-main section #bottom > p {
+main #sec1 #bottom > p {
   font-size: 0.892rem;
 }
-main section #bottom #text {
+main #sec1 #bottom #text {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-main section #bottom #text h1 {
+main #sec1 #bottom #text h1 {
   font-weight: 300;
   font-size: 2.8rem;
 }
-main section #bottom #text p {
-  font-size: 1.3rem;
-  line-height: 1.9rem;
+main #sec1 #bottom #text p {
+  font-size: 1.55rem;
+  line-height: 2.4rem;
   opacity: 0.8;
-  color: rgb(116, 115, 115);
+  color: rgb(153, 151, 151);
 }
-main section #bottom #text button {
+main #sec1 #bottom #text button {
   width: -moz-fit-content;
   width: fit-content;
   background-color: transparent;
   border: none;
-  font-size: 1rem;
+  font-size: 1.4rem;
   color: rgb(237, 237, 237);
   font-weight: 300;
   margin-top: 0.852rem;
 }
-main section #bottom #text button i {
+main #sec1 #bottom #text button i {
   background-color: rgb(43, 41, 41);
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   padding: 0.422rem;
   border-radius: 50px;
   font-weight: 100;
   border: 1px solid rgb(117, 109, 109);
   margin: 0 10px 0 0;
 }
+main #sec2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.2rem;
+  margin-top: 0.5rem;
+}
+main #sec2 .top, main #sec2 .bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+main #sec2 .top .element, main #sec2 .bottom .element {
+  text-align: center;
+  margin: 1rem 0 0.1rem 0;
+}
+main #sec2 .top .element Small, main #sec2 .bottom .element Small {
+  font-size: 1.1rem;
+  color: rgb(192, 192, 192);
+  font-weight: 400;
+  opacity: 0.8;
+}
+main #sec2 .top .element H2, main #sec2 .bottom .element H2 {
+  font-size: 2.7rem;
+  font-weight: 400;
+  margin-top: 0.352rem;
+}
+main #sec2 .top .element H2 i, main #sec2 .bottom .element H2 i {
+  font-weight: 100;
+}
+main #sec3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.2rem;
+}
+main #sec3 .top {
+  width: 100%;
+}
+main #sec3 .top img {
+  width: 100%;
+  border-radius: 12px;
+}
+main #sec3 .bottom {
+  width: 100%;
+  background-color: rgb(30, 30, 30);
+  border-radius: 15px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+}
+main #sec3 .bottom > p {
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+main #sec3 .bottom .text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main #sec3 .bottom .text h1 {
+  font-weight: 400;
+  font-size: 2.8rem;
+}
+main #sec3 .bottom .text p {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  opacity: 0.8;
+  color: rgb(153, 151, 151);
+}
+main #sec4 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.2rem;
+}
+main #sec4 .top {
+  width: 100%;
+}
+main #sec4 .top img {
+  width: 100%;
+  border-radius: 12px;
+}
+main #sec4 .bottom {
+  width: 100%;
+  background-color: rgb(30, 30, 30);
+  border-radius: 15px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+}
+main #sec4 .bottom > p {
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+main #sec4 .bottom .text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main #sec4 .bottom .text h1 {
+  font-weight: 400;
+  font-size: 2.8rem;
+}
+main #sec4 .bottom .text p {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  opacity: 0.8;
+  color: rgb(153, 151, 151);
+}
 
-@media (min-width: 900px) {
-  main section {
+@media (min-width: 600px) and (max-width: 989px) {
+  #sec1 {
     flex-direction: row;
     padding: 1rem 4rem;
   }
-  main section #top,
-  main section #bottom {
+  #sec1 #top,
+  #sec1 #bottom {
     width: 50%;
   }
-  main section #bottom {
+  #sec1 #bottom {
     justify-content: space-between;
     padding: 3rem;
   }
-  main section #bottom #text {
+  #sec1 #bottom #text {
     gap: 1.5rem;
   }
-  main section #bottom #text h1 {
-    font-size: 3.5rem;
+  #sec1 #bottom #text h1 {
+    font-size: 3.9rem;
   }
-  main section #bottom #text p {
+  #sec1 #bottom #text p {
     width: 80%;
-    font-size: 1rem;
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 990px) {
+  main #sec1 {
+    flex-direction: row;
+    padding: 1rem 4rem;
+  }
+  main #sec1 #top,
+  main #sec1 #bottom {
+    width: 50%;
+  }
+  main #sec1 #bottom {
+    justify-content: space-between;
+    padding: 3rem;
+  }
+  main #sec1 #bottom #text {
+    gap: 1.5rem;
+  }
+  main #sec1 #bottom #text h1 {
+    font-size: 3.9rem;
+  }
+  main #sec1 #bottom #text p {
+    width: 80%;
+    font-size: 1.2rem;
+  }
+  main #sec2 {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  main #sec2 .top .element, main #sec2 .bottom .element {
+    margin: 1rem 0 1rem 0;
+  }
+  main #sec2 .top .element Small, main #sec2 .bottom .element Small {
+    font-size: 1.2rem;
+  }
+  main #sec2 .top .element h2, main #sec2 .bottom .element h2 {
+    font-size: 2.3rem;
+  }
+  main #sec3 {
+    flex-direction: row-reverse;
+    padding: 1rem 4rem;
+  }
+  main #sec3 .top, main #sec3 .bottom {
+    width: 50%;
+  }
+  main #sec3 .bottom {
+    justify-content: space-between;
+    padding: 3rem;
+  }
+  main #sec3 .bottom > P {
+    font-size: 0.852rem;
+  }
+  main #sec3 .bottom .text h1 {
+    font-size: 2.6rem;
+  }
+  main #sec3 .bottom .text p {
+    font-size: 1.1rem;
+    -moz-columns: 2;
+         columns: 2;
+    line-height: 1.7rem;
+    text-align: left;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+  }
+  main #sec4 {
+    flex-direction: row;
+    padding: 1rem 4rem;
+  }
+  main #sec4 .top, main #sec4 .bottom {
+    width: 50%;
+  }
+  main #sec4 .bottom {
+    justify-content: space-between;
+    padding: 3rem;
+  }
+  main #sec4 .bottom > P {
+    font-size: 0.852rem;
+  }
+  main #sec4 .bottom .text h1 {
+    font-size: 2.6rem;
+  }
+  main #sec4 .bottom .text p {
+    font-size: 1.1rem;
+    -moz-columns: 2;
+         columns: 2;
+    line-height: 1.7rem;
+    text-align: left;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  #sec1 {
+    padding: 2rem 8rem;
+  }
+  #sec1 #text h1 {
+    font-size: 4rem;
   }
 }/*# sourceMappingURL=style.css.map */

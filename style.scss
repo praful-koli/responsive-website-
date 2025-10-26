@@ -7,12 +7,12 @@
 html, body {
     height: 100%;
     width: 100%;
-    font-size: clamp(10px , 2.5vh , 18px);
+    font-size: clamp(12px , 2.5vw , 18px);
 }
 
 body { 
-    background-color: rgb(31, 31, 31);
-    // color: rgb(218, 217, 217);
+    background-color: black;
+   
     user-select: none;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -28,10 +28,11 @@ body {
 main {
     width: 100%;
     @include col-flex(0rem);
-    section  {
+    background-color: rgb(10, 10, 10);
+     #sec1  {
         width: 100%;
-        @include col-flex(0.5rem);
-        padding: 0.5rem;
+        @include col-flex(1rem);
+        padding: 1.2rem;
 
         #top {
             width: 100%;
@@ -43,10 +44,10 @@ main {
 
         #bottom {
             width: 100%;
-            background-color: rgb(38, 38, 38);
+            background-color: rgb(30, 30, 30);
             border-radius: 15px;
-            padding: 1.8rem;
-            @include col-flex(3.5rem);
+            padding: 2rem;
+            @include col-flex(4.8rem);
           > p {
                 font-size: 0.892rem;
             }
@@ -59,24 +60,24 @@ main {
                  }
 
                  p{
-                    font-size: 1.3rem;
-                    line-height: 1.9rem;
+                    font-size: 1.55rem;
+                    line-height: 2.4rem;
                     opacity: 0.8;
-                    color: rgb(116, 115, 115);
+                    color: rgb(153, 151, 151);
                  }
 
                  button {
                    width: fit-content;
                    background-color: transparent;
                    border: none;
-                   font-size:1rem;
+                   font-size:1.4rem;
                    color: rgb(237, 237, 237);
                    font-weight: 300;
                    margin-top: 0.852rem;
                    
                    i{
                       background-color: rgb(43, 41, 41);
-                      font-size: 1.1rem;
+                      font-size: 1.4rem;
                       padding: 0.422rem;
                       border-radius: 50px;
                       font-weight: 100;
@@ -88,18 +89,150 @@ main {
             }
         }
     }
+  }
+
+
+  #sec2 {
+     @include col-flex(1rem);
+      padding: 1.2rem;
+      margin-top: 0.5rem;
+     .top,.bottom {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 1rem;
+         
+        .element {
+            text-align:center;
+            margin: 1rem 0 0.1rem 0;
+            Small {
+                font-size:1.1rem;
+                color: rgb(192, 192, 192);
+                font-weight: 400;
+                opacity: 0.8;
+            }
+            H2 {
+                font-size: 2.7rem;
+                font-weight: 400;
+                margin-top: 0.352rem;
+                i {
+                    font-weight: 100;
+                }
+            }
+        }
+     }
+  }
+
+
+  #sec3 {
+    width: 100%;
+    @include col-flex(1rem);
+    padding: 1.2rem;
+
+    .top {
+        width: 100%;
+        img {
+            width: 100%;
+            border-radius: 12px;
+
+        }
+    }
+
+    .bottom {
+            width: 100%;
+            background-color: rgb(30, 30, 30);
+            border-radius: 15px;
+            padding: 2rem;
+            @include col-flex(4.8rem);
+            >p{
+                font-size: 1.05rem;
+                font-weight: 500
+            }
+            .text {
+                @include col-flex(2rem);
+
+                h1 {
+                    font-weight: 400;
+                    font-size: 2.8rem;
+                     
+                 }
+
+                 p{
+                    font-size: 1.4rem;
+                    line-height: 2.2rem;
+                    opacity: 0.8;
+                    color: rgb(153, 151, 151);
+                 }
+
+            }
+    }
+  }
+
+
+
+  
+  #sec4 {
+    width: 100%;
+    @include col-flex(1rem);
+    padding: 1.2rem;
+
+    .top {
+        width: 100%;
+        img {
+            width: 100%;
+            border-radius: 12px;
+
+        }
+    }
+
+    .bottom {
+            width: 100%;
+            background-color: rgb(30, 30, 30);
+            border-radius: 15px;
+            padding: 2rem;
+            @include col-flex(4.8rem);
+            >p{
+                font-size: 1.05rem;
+                font-weight: 500
+            }
+            .text {
+                @include col-flex(2rem);
+
+                h1 {
+                    font-weight: 400;
+                    font-size: 2.8rem;
+                     
+                 }
+
+                 p{
+                    font-size: 1.4rem;
+                    line-height: 2.2rem;
+                    opacity: 0.8;
+                    color: rgb(153, 151, 151);
+                  }
+
+            }
+        }
+    }
 }
 
-}
 
 
-@media (min-width:900px) {
-    main {
 
-        section {
+
+
+
+
+
+
+//tablet view
+@media (min-width:600px) and (max-width:989px) {
+
+    #sec1 {
+
             flex-direction: row;
             padding: 1rem 4rem;
-
+          
             #top,
             #bottom {
                 width: 50%;
@@ -114,15 +247,149 @@ main {
                     gap: 1.5rem;
 
                     h1 {
-                        font-size: 3.5rem;
+                        font-size: 3.9rem;
                     }
 
                     p {
                         width: 80%;
-                        font-size: 1rem;
+                        font-size: 1.2rem;
                     }
                 }
             }
         }
+//   #bottom #text h1 {
+//     font-size: 2rem;
+//   }
+//   #bottom #text p {
+//     font-size: 1.1rem;
+//   }
+}
+
+
+
+
+// destop view
+@media (min-width:990px) {
+    main {
+
+        #sec1 {
+
+            flex-direction: row;
+            padding: 1rem 4rem;
+          
+            #top,
+            #bottom {
+                width: 50%;
+            }
+
+            #bottom {
+                justify-content: space-between;
+                padding: 3rem;
+
+                #text {
+
+                    gap: 1.5rem;
+
+                    h1 {
+                        font-size: 3.9rem;
+                    }
+
+                    p {
+                        width: 80%;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+
+       #sec2 {
+          flex-direction: row;
+          justify-content: space-evenly;
+          .top,.bottom {
+             .element {
+                margin: 1rem 0 1rem 0;
+                Small {
+                    font-size: 1.2rem;
+                }
+                h2 {
+                    font-size: 2.3rem;
+                }
+             }
+          }
+       }
+
+
+       #sec3 {
+          flex-direction: row-reverse;
+          padding: 1rem 4rem;
+          .top,.bottom {
+            width: 50%;
+          }
+
+          .bottom {
+                justify-content: space-between;
+                padding: 3rem;
+             >P{
+                font-size: 0.852rem;
+             }
+            .text {
+                h1 {
+                    font-size: 2.6rem;
+                }
+                p {
+                    font-size: 1.1rem;
+                    columns: 2;
+                    line-height: 1.7rem;
+                    text-align:left;
+                    column-gap: 40px;
+                }
+               
+            }
+          }
+       }
+
+       #sec4 {
+          flex-direction: row;
+          padding: 1rem 4rem;
+          .top,.bottom {
+            width: 50%;
+          }
+
+          .bottom {
+                justify-content: space-between;
+                padding: 3rem;
+             >P{
+                font-size: 0.852rem;
+             }
+            .text {
+                h1 {
+                    font-size: 2.6rem;
+                }
+                p {
+                    font-size: 1.1rem;
+                    columns: 2;
+                    line-height: 1.7rem;
+                    text-align:left;
+                    column-gap: 40px;
+                }
+               
+            }
+          }
+       }
+
+       
+        
     }
+}
+
+
+
+@media (min-width:1200px) {
+  #sec1 {
+    padding: 2rem 8rem;
+  }
+
+  #sec1 #text h1 {
+    font-size: 4rem;
+  }
 }
