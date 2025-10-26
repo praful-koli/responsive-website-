@@ -233,9 +233,7 @@ main {
                 font-weight: 400;
                 font-size: 2.5rem;
             }
-            button {
-                 
-            }
+          
         }
     }
 
@@ -419,6 +417,49 @@ main {
         }
         
     }
+   
+    #sec7 {
+        width: 100%;
+        padding: 1.2rem;
+        @include col-flex(1rem);
+        .top {
+            width: 100%;
+            img {
+                width: 100%;
+                border-radius: 12px
+            };
+
+        }
+
+        .bottom {
+            padding: 2rem;
+            background-color: rgb(30, 30, 30);
+            border-radius: 12px;
+            @include col-flex(5.8rem);
+            .text {
+                
+                p {
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    margin-bottom: 1rem;
+                     color:rgb(121, 118, 118) ;
+                }
+                h2{
+                    font-size: 2.7rem;
+                    font-weight: 400;
+                }
+
+               
+            }
+             button {
+                    width: fit-content;
+                    background-color: transparent;
+                    border: none;
+                    margin-bottom: 1rem;
+            }
+        }
+    }
+
 }
 
  
@@ -434,7 +475,7 @@ main {
     to {
         opacity: 1;
         scale: 1;
-         transform: translateX(0px);
+        transform: translateX(0px);
     }
 }
 
@@ -442,7 +483,7 @@ section {
     
     animation: appear  linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 0%;
+    animation-range: entry 0% cover 25%;
 }
 
 
@@ -604,11 +645,33 @@ section {
 
        #sec5{
             padding: 1rem 4rem;
-            display: ;
+          
        }
        #sec6 {
             padding: 1rem 4rem;
             flex-direction: row;
+       }
+
+
+       #sec7 {
+         padding: 1rem 4rem;
+         flex-direction: row;
+          .top,.bottom {
+            width: 50%;
+          }
+         .bottom {
+            padding: 3.2rem;
+            gap: 10rem;
+            .text {
+                p {
+                    font-size: 0.952rem;
+                }
+                h2 {
+                    font-weight: 400;
+                }
+            }
+         }
+         
        }
         
     }
