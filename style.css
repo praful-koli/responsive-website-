@@ -207,6 +207,184 @@ main #sec4 .bottom .text p {
   opacity: 0.8;
   color: rgb(153, 151, 151);
 }
+main #sec5 {
+  width: 100%;
+  padding: 1.2rem;
+}
+main #sec5 .heading h1 {
+  color: rgb(223, 219, 219);
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+main #sec5 .heading button {
+  display: none;
+}
+main #sec6 {
+  width: 100%;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main #sec6 .card-1 {
+  width: 100%;
+  background-image: url(./assets/imag4card.webp);
+  background-position: center;
+  aspect-ratio: 1/1;
+  background-size: cover;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  justify-content: space-between;
+  padding: 1rem;
+}
+main #sec6 .card-1 .icon, main #sec6 .card-1 .bottom {
+  background-color: rgba(193, 191, 191, 0.363);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border-radius: 1rem soild rgb(249, 245, 245);
+  border-radius: 0.7rem;
+  padding: 0.9rem;
+}
+main #sec6 .card-1 .top {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.7rem;
+  margin-top: 1.8rem;
+  margin-right: 1rem;
+}
+main #sec6 .card-1 .top .icon {
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 50%;
+}
+main #sec6 .card-1 .top .icon i {
+  font-size: 1.45rem;
+  font-weight: 100;
+}
+main #sec6 .card-1 .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+}
+main #sec6 .card-1 .bottom h2 {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+main #sec6 .card-1 .bottom p {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+main #sec6 .card-2 {
+  width: 100%;
+  background-image: url(./assets/card5img.webp);
+  background-position: center;
+  aspect-ratio: 1/1;
+  background-size: cover;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  justify-content: space-between;
+  padding: 1rem;
+}
+main #sec6 .card-2 .icon, main #sec6 .card-2 .bottom {
+  background-color: rgba(193, 191, 191, 0.363);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border-radius: 1rem soild rgb(249, 245, 245);
+  border-radius: 0.7rem;
+  padding: 0.9rem;
+}
+main #sec6 .card-2 .top {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.7rem;
+  margin-top: 1.8rem;
+  margin-right: 1rem;
+}
+main #sec6 .card-2 .top .icon {
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 50%;
+}
+main #sec6 .card-2 .top .icon i {
+  font-size: 1.45rem;
+  font-weight: 100;
+}
+main #sec6 .card-2 .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+}
+main #sec6 .card-2 .bottom h2 {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+main #sec6 .card-2 .bottom p {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+main #sec6 .card-3 {
+  width: 100%;
+  background-image: url(./assets/card6img.webp);
+  background-position: center;
+  aspect-ratio: 1/1;
+  background-size: cover;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  justify-content: space-between;
+  padding: 1rem;
+}
+main #sec6 .card-3 .icon, main #sec6 .card-3 .bottom {
+  background-color: rgba(193, 191, 191, 0.363);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border-radius: 1rem soild rgb(249, 245, 245);
+  border-radius: 0.7rem;
+  padding: 0.9rem;
+}
+main #sec6 .card-3 .top {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.7rem;
+  margin-top: 1.8rem;
+  margin-right: 1rem;
+}
+main #sec6 .card-3 .top .icon {
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 50%;
+}
+main #sec6 .card-3 .top .icon i {
+  font-size: 1.45rem;
+  font-weight: 100;
+}
+main #sec6 .card-3 .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+}
+main #sec6 .card-3 .bottom h2 {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+main #sec6 .card-3 .bottom p {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
 
 @keyframes appear {
   from {
@@ -223,7 +401,7 @@ main #sec4 .bottom .text p {
 section {
   animation: appear linear;
   animation-timeline: view();
-  animation-range: entry 0% cover 40%;
+  animation-range: entry 0% cover 0%;
 }
 
 @media (min-width: 600px) and (max-width: 989px) {
@@ -337,6 +515,13 @@ section {
     text-align: left;
     -moz-column-gap: 40px;
          column-gap: 40px;
+  }
+  main #sec5 {
+    padding: 1rem 4rem;
+  }
+  main #sec6 {
+    padding: 1rem 4rem;
+    flex-direction: row;
   }
 }
 @media (min-width: 1200px) {
