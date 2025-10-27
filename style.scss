@@ -442,25 +442,86 @@ main {
                     font-size: 1.2rem;
                     font-weight: 500;
                     margin-bottom: 1rem;
-                     color:rgb(121, 118, 118) ;
+                     color:rgb(143, 142, 142) ;
                 }
                 h2{
                     font-size: 2.7rem;
                     font-weight: 400;
-                     color:rgb(121, 118, 118) ;
+                    color:rgb(143, 142, 142) ;
                 }
 
                
             }
              button {
-                color:rgb(121, 118, 118) ;
+                    color:rgb(143, 142, 142) ;
                     width: fit-content;
                     background-color: transparent;
                     border: none;
                     margin-bottom: 1rem;
+
+                    i {
+                        color:rgb(143, 142, 142) ;
+                        background-color:transparent;
+                        padding: 0.522rem;
+                        border-radius: 50%;
+                        border: 0.1rem solid white;
+                        margin-right: 1rem;
+                    }
             }
         }
     }
+
+   #sec8 {
+       width: 100%;
+        
+       padding: 1.2rem;
+         .box {
+            width: 100%;
+             border-radius: 12px;
+             background-color: rgb(208, 208, 69);
+             padding: 2.5rem;
+             @include col-flex(1rem);
+             .top {
+                width: 100%;
+                p{ 
+                    color: black;
+                    font-weight: 400;
+                    letter-spacing: 1.8px;
+                    margin-bottom: 1rem;
+                }
+                h2 {
+                     text-transform: uppercase;
+                     color: black;
+                     font-weight: 200;
+                     letter-spacing: 1.8px;
+                     font-size: 3.5rem;
+                     line-height: 4rem;
+                     margin-bottom: 1rem;
+                }
+             }
+             .bottom {
+                width: 100%;
+                button {
+                    
+                    width: 100%;
+                    background-color: black;
+                    color: rgb(223, 223, 223);
+                    border: none;
+                    border-radius: 12px;
+                    padding: 1.5rem 5.8rem;
+                    word-spacing: 5px;
+                    font-size: 1.07rem;
+                    font-weight: 100;
+                    
+                    i {
+                        font-size: 1.4rem;
+                        font-weight: 100;
+                    }
+                }
+             }
+          }
+    }
+
 
 }
 
@@ -485,7 +546,7 @@ section {
     
     animation: appear  linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 25%;
+    animation-range: entry 0% cover 0%;
 }
 
 
@@ -674,6 +735,42 @@ section {
             }
          }
          
+       }
+
+       #sec8 {
+         padding: 1rem 4rem;
+         .box {
+            
+            padding: 3.2rem;
+            flex-direction: row;
+            .top {
+                 
+                p{
+                    font-size: 0.752rem;
+                }
+
+                h2 { 
+                  
+                     width: 70%;
+                      font-size: 3.652rem;
+                      letter-spacing: 2.2px;
+                }
+            }
+
+            .bottom {
+                
+                width: 25%;
+                display: flex;
+                align-items: flex-end;
+                button {
+                    padding: 0.952rem 2.8rem;
+                    font-size: 0.852rem;
+                    i {
+                        font-size: 0.852rem;
+                    }
+                }
+            }
+         }
        }
         
     }
